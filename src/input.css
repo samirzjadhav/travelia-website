@@ -87,6 +87,39 @@
 /* REUSED STYLE */
 
 /* PRELOADER */
+.preloader {
+  background-color: var(--bg-lavender-blush);
+  transition: var(--transition-1);
+}
+
+.preloader.remove {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.preloader-inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 10px;
+  background-color: var(--bg-black-alpha-20);
+  filter: blur(4px);
+  z-index: -1;
+  animation: dropShadow 700ms ease-in-out infinite alternate;
+}
+
+@keyframes dropShadow {
+  0% {
+    width: 40%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
 
 /* HEADER */
 
