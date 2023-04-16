@@ -82,11 +82,33 @@
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 }
 
+ion-icon {
+  width: 40px;
+  height: 40px;
+}
+
 /* RESET */
 
 /* REUSED STYLE */
+.h-container {
+  padding-inline: 16px;
+}
 
 /* PRELOADER */
+
+@layer components {
+  .preloader {
+    @apply grid fixed place-content-center w-full h-full top-0 left-0 z-10;
+  }
+
+  .navbar-link {
+    @apply relative text-xl font-medium;
+  }
+  .navbar-item {
+    @apply pb-3.5;
+  }
+}
+
 .preloader {
   background-color: var(--bg-lavender-blush);
   transition: var(--transition-1);
@@ -122,6 +144,65 @@
 }
 
 /* HEADER */
+.header {
+  padding-block: 30px;
+}
+
+.header.active {
+  position: fixed;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-1);
+  animation: slideIn 500ms ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  z-index: 1;
+  background-color: var(--bg-white);
+  transition: 400ms var(--cubic-out);
+}
+
+.navbar.active {
+  transform: translateX(-320px);
+  transition: 500ms;
+  visibility: visible;
+}
+
+.navbar-list {
+  margin-block-start: 50px;
+}
+
+.navbar-link {
+  color: var(--text-granite-gray);
+  padding-block: 8px;
+  transition: var(--transition-1);
+}
+
+.navbar-link::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background-color: var(--bg-majorelle-blue);
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active)::before {
+  opacity: 1;
+}
 
 /* HERO */
 
