@@ -94,6 +94,30 @@ ion-icon {
   padding-inline: 16px;
 }
 
+.btn {
+  padding-inline: 30px;
+  color: var(--text-white);
+  transition: var(--transition-1);
+  border-radius: var(--radius-pill);
+}
+
+.btn-primary {
+  background-color: var(--bg-majorelle-blue);
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+  background-color: var(--bg-ocean-blue);
+  box-shadow: var(--shadow-2);
+}
+.btn-secondary {
+  background-color: var(--bg-red-salsa);
+}
+
+.btn-secondary:is(:hover, :focus-visible) {
+  background-color: var(--bg-english-vermillion);
+  box-shadow: var(--shadow-3);
+}
+
 /* PRELOADER */
 
 @layer components {
@@ -106,6 +130,14 @@ ion-icon {
   }
   .navbar-item {
     @apply pb-3.5;
+  }
+
+  .btn {
+    @apply flex h-12 justify-center items-center gap-2 max-w-max;
+  }
+
+  .btn-primary {
+    @apply text-xl font-medium;
   }
 }
 
@@ -181,7 +213,7 @@ ion-icon {
 }
 
 .navbar-link {
-  color: var(--text-granite-gray);
+  color: var(--text-gunmetal);
   padding-block: 8px;
   transition: var(--transition-1);
 }
@@ -202,6 +234,35 @@ ion-icon {
 
 .navbar-link:is(:hover, :focus-visible, .active)::before {
   opacity: 1;
+}
+
+.navbar-item:is(:hover, :focus-visible, .active) {
+  transform: translateX(10px);
+}
+
+.header-action {
+  margin-block-start: auto;
+  padding-block-start: 20px;
+  border-block-start: 1px solid var(--border-gainsboro);
+}
+
+.login-btn {
+  color: var(--text-gunmetal);
+  transition: var(--transition-1);
+}
+
+.login-btn:is(:hover, :focus-visible) {
+  opacity: 0.6;
+}
+
+.overlay {
+  background-color: var(--bg-white);
+  transition: var(--transition-1);
+}
+
+.overlay.active {
+  opacity: 0.5;
+  visibility: visible;
 }
 
 /* HERO */
