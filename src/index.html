@@ -22,10 +22,7 @@
   </head>
   <body>
     <!-- Preloader -->
-    <div
-      class="preloader grid fixed place-content-center w-full h-full top-0 left-0 z-10"
-      data-preloader
-    >
+    <div class="preloader" data-preloader>
       <div class="preloader-inner relative">
         <img
           src="./images/favicon.svg"
@@ -36,8 +33,62 @@
     </div>
 
     <!-- Header Section -->
+    <header class="header absolute top-0 left-0 w-full z-10" data-header>
+      <div class="h-container container flex justify-between items-center">
+        <a href="#" class="logo">
+          <img src="./images/logo.svg" alt="" class="w-44 h-10" />
+        </a>
 
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+        <nav
+          class="navbar active fixed top-0 -right-80 w-full max-w-[350px]: h-screen pt-7 pb-7 pr-4 pl-4 flex flex-col invisible"
+          data-navbar
+        >
+          <div class="navbar-top flex items-center justify-between">
+            <a href="#" class="logo">
+              <img src="./images/logo.svg" alt="" class="w-44 h-10" />
+            </a>
+            <button
+              class="nav-toggle-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link active">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Services</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Pricing</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+          <div class="header-action">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="btn btn-primary">Sign Up</a>
+          </div>
+        </nav>
+
+        <button
+          class="nav-toggle-btn text-4xl"
+          aria-label="open menu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay hidden" data-overlay data-nav-toggler></div>
+      </div>
+    </header>
 
     <!-- Icons -->
     <script
