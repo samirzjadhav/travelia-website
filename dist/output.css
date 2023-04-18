@@ -798,6 +798,10 @@ video {
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 }
 
+body.nav-active {
+  overflow: hidden;
+}
+
 ion-icon {
   width: 40px;
   height: 40px;
