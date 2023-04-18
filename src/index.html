@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Preloader -->
+    <link rel="preload" as="images" href="./images/hero-banner.png" />
+    <link rel="preload" as="images" href="./images/preloader.svg" />
   </head>
   <body>
     <!-- Preloader -->
@@ -100,13 +104,15 @@
         <!-- Hero -->
 
         <section
-          class="section hero has-bg-img"
+          class="section hero has-bg-img bg-no-repeat bg-cover bg-center"
           aria-label="hero"
           style="background-image: url('./images/hero-bg.jpg')"
         >
-          <div class="container h-container">
+          <div class="container h-container grid gap-12">
             <div class="hero-content">
-              <p class="hero-subtitle">
+              <p
+                class="hero-subtitle text-xl flex items-center gap-3 max-w-max pt-2 pb-2 pr-5 pl-5"
+              >
                 Explore the World
                 <img
                   src="./images/title-icon.svg"
@@ -115,11 +121,11 @@
                 />
               </p>
 
-              <h1 class="h1 title hero-title">
+              <h1 class="h1 title hero-title leading-tight text-6xl">
                 It’s a Big World Out There, Go Explore
               </h1>
 
-              <p class="hero-text">
+              <p class="hero-text text-xl">
                 We always make our customer happy by providing as many choices
                 as possible
               </p>
@@ -127,22 +133,37 @@
               <div class="wrapper">
                 <a href="" class="btn btn-secondary">
                   <span class="span">Plan a Trip </span>
-                  <ion-icon name="chevron-forward" aria-hidden="true">
+                  <ion-icon
+                    name="chevron-forward"
+                    aria-hidden="true"
+                    class="h-6 w-6"
+                  >
                   </ion-icon>
                 </a>
-                <button class="hero-btn">
-                  <div class="btn-img"></div>
+                <button class="hero-btn flex items-center gap-8">
+                  <div class="btn-img relative h-14 w-14">
                     <img
                       src="./images/hero-button-img.jpg"
                       alt=""
                       class="img-cover"
                     />
-                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    <ion-icon
+                      name="play"
+                      aria-hidden="true"
+                      class="icons h-5 w-5 absolute top-2/4 right-0 p-2.5"
+                    ></ion-icon>
                   </div>
-                  <p class="text">Watch our Story</p>
+                  <p class="text text-xl">Watch our Story</p>
                 </button>
               </div>
             </div>
+            <figure class="hero-banner">
+              <img
+                src="./images/hero-banner.png"
+                alt="hero banner"
+                class="w-full"
+              />
+            </figure>
           </div>
         </section>
       </article>

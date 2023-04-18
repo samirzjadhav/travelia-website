@@ -91,6 +91,13 @@ ion-icon {
   height: 40px;
 }
 
+.icons {
+  transform: translate(50%, -50%);
+  background-color: var(--bg-white);
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-1);
+}
+
 /* RESET */
 
 /* REUSED STYLE */
@@ -120,6 +127,10 @@ ion-icon {
 .btn-secondary:is(:hover, :focus-visible) {
   background-color: var(--bg-english-vermillion);
   box-shadow: var(--shadow-3);
+}
+
+.section {
+  padding-block-end: var(--section-spacing);
 }
 
 /* PRELOADER */
@@ -270,6 +281,53 @@ ion-icon {
 }
 
 /* HERO */
+
+.hero {
+  padding-block-start: 150px;
+}
+
+.hero-title {
+  margin-block: 20px;
+}
+
+.title {
+  color: var(--text-gunmetal);
+  font-weight: var(--weight-semiBold);
+}
+
+.hero-subtitle {
+  background-color: var(--bg-misty-rose);
+  color: var(--text-light-coral);
+  border-radius: var(--radius-pill);
+}
+
+.hero-text {
+  margin-block-end: 20px;
+}
+
+.hero .btn-secondary {
+  margin-block-end: 20px;
+}
+
+.hero-btn {
+  color: var(--text-gunmetal);
+  font-weight: var(--weight-medium);
+  transition: var(--transition-1);
+}
+
+.hero-btn .btn-img {
+  background-color: var(--bg-gainsboro);
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-1);
+}
+
+.img-cover {
+  border-radius: inherit;
+}
+
+.hero-btn:is(:hover, :focus-visible) {
+  color: var(--text-majorelle-blue);
+}
 
 /* SERVICE */
 
