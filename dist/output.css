@@ -984,6 +984,12 @@ ion-icon {
           padding-block-end: var(--section-spacing);
 }
 
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--bg-gainsboro);
+  overflow: hidden;
+}
+
 /* PRELOADER */
 
 .section-subtitle {
@@ -1197,9 +1203,20 @@ ion-icon {
   color: var(--text-majorelle-blue);
 }
 
-/* SERVICE */
-
 /* DESTINATION */
+
+.desti .section-title {
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+}
+
+.desti-card .card-banner {
+  border-radius: var(--radius-30);
+}
+
+.desti-card:is(:hover, :focus-within).img-cover {
+  transform: scale(1.05);
+}
 
 /* EXPERIENCE */
 
@@ -1209,4 +1226,4 @@ ion-icon {
 
 /* FOOTER */
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES */ ;
