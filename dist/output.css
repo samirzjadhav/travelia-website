@@ -620,12 +620,20 @@ video {
   right: 0px;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .top-2\/4 {
   top: 50%;
+}
+
+.top-5 {
+  top: 1.25rem;
 }
 
 .z-10 {
@@ -757,6 +765,14 @@ video {
   gap: 2rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -820,6 +836,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1214,8 +1235,35 @@ ion-icon {
   border-radius: var(--radius-30);
 }
 
-.desti-card:is(:hover, :focus-within).img-cover {
+.desti-card:is(:hover, :focus-within) .img-cover {
   transform: scale(1.05);
+}
+
+.desti-card .card-price {
+  background-color: var(--bg-white);
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-bold);
+  padding: 5px 15px;
+  border-radius: var(--radius-pill);
+}
+
+.desti-card .card-title {
+  margin-block: 15px 5px;
+  transition: var(--transition-1);
+}
+
+.desti-card .card-title:is(:hover, :focus-visible) {
+  color: var(--text-majorelle-blue);
+}
+
+.desti-card :is(.card-rating, .span) {
+  display: flex;
+  align-items: center;
+}
+
+.desti-card .card-rating {
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
 }
 
 /* EXPERIENCE */

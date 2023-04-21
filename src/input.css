@@ -373,8 +373,34 @@ ion-icon {
   border-radius: var(--radius-30);
 }
 
-.desti-card:is(:hover, :focus-within).img-cover {
+.desti-card:is(:hover, :focus-within) .img-cover {
   transform: scale(1.05);
+}
+
+.desti-card .card-price {
+  background-color: var(--bg-white);
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-bold);
+  padding: 5px 15px;
+  border-radius: var(--radius-pill);
+}
+
+.desti-card .card-title {
+  margin-block: 15px 5px;
+  transition: var(--transition-1);
+}
+
+.desti-card .card-title:is(:hover, :focus-visible) {
+  color: var(--text-majorelle-blue);
+}
+
+.desti-card :is(.card-rating, .span) {
+  display: flex;
+  align-items: center;
+}
+
+.desti-card .card-rating {
+  margin-block-start: 10px;
 }
 
 /* EXPERIENCE */
