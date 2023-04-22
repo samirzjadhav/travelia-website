@@ -753,6 +753,14 @@ video {
   gap: 3rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -763,14 +771,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-2\.5 {
-  gap: 0.625rem;
 }
 
 .bg-cover {
@@ -793,6 +793,10 @@ video {
   padding: 0.625rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -805,6 +809,10 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -813,12 +821,20 @@ video {
   padding-left: 1.25rem;
 }
 
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
 
 .pr-5 {
   padding-right: 1.25rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-2 {
@@ -1264,6 +1280,15 @@ ion-icon {
 .desti-card .card-rating {
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
+}
+
+.desti-card .card-rating .span {
+  background-color: var(--bg-sunglow-alpha-10);
+  border-radius: var(--radius-pill);
+}
+
+.desti-card .card-rating ion-icon {
+  color: var(--text-sunglow);
 }
 
 /* EXPERIENCE */
