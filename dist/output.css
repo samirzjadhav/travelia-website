@@ -588,6 +588,11 @@ video {
   font-weight: 500;
 }
 
+.card-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -1289,6 +1294,12 @@ ion-icon {
 
 .desti-card .card-rating ion-icon {
   color: var(--text-sunglow);
+}
+
+.desti .btn {
+  margin-inline: auto;
+  -webkit-margin-before: 40px;
+          margin-block-start: 40px;
 }
 
 /* EXPERIENCE */

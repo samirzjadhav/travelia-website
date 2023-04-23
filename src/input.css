@@ -160,6 +160,10 @@ ion-icon {
   .btn-primary {
     @apply text-xl font-medium;
   }
+
+  .card-text {
+    @apply text-lg;
+  }
 }
 
 .section-subtitle {
@@ -410,6 +414,11 @@ ion-icon {
 
 .desti-card .card-rating ion-icon {
   color: var(--text-sunglow);
+}
+
+.desti .btn {
+  margin-inline: auto;
+  margin-block-start: 40px;
 }
 
 /* EXPERIENCE */
