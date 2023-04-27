@@ -593,6 +593,17 @@ video {
   line-height: 1.75rem;
 }
 
+.exp-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.item-title {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -711,6 +722,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-3\/12 {
+  width: 25%;
 }
 
 .max-w-\[350px\] {
@@ -879,13 +894,13 @@ video {
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -1308,6 +1323,21 @@ ion-icon {
           margin-block-start: 40px;
 }
 
+.exp .section-text {
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+}
+
+.exp-item {
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+}
+
+.exp-item .item-title {
+  color: var(--bg-majorelle-blue);
+  font-weight: var(--weight-bold);
+}
+
 /* EXPERIENCE */
 
 /* GALLERY */
@@ -1316,4 +1346,4 @@ ion-icon {
 
 /* FOOTER */
 
-/* MEDIA QUERIES */ ;
+/* MEDIA QUERIES */

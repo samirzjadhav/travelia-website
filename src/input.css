@@ -164,6 +164,14 @@ ion-icon {
   .card-text {
     @apply text-lg;
   }
+
+  .exp-item {
+    @apply flex items-center gap-3;
+  }
+
+  .item-title {
+    @apply text-6xl;
+  }
 }
 
 .section-subtitle {
@@ -422,6 +430,24 @@ ion-icon {
   margin-block-start: 40px;
 }
 
+.exp .section-text {
+  margin-block-end: 20px;
+}
+
+.exp-item {
+  margin-block-start: 15px;
+}
+
+.exp-item .item-title {
+  color: var(--bg-majorelle-blue);
+  font-weight: var(--weight-bold);
+}
+
+.exp-shape {
+  left: -10px;
+  filter: drop-shadow(--shadow-4);
+}
+
 /* EXPERIENCE */
 
 /* GALLERY */
@@ -430,4 +456,4 @@ ion-icon {
 
 /* FOOTER */
 
-/* MEDIA QUERIES */ ;
+/* MEDIA QUERIES */
