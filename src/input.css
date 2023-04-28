@@ -468,6 +468,11 @@ ion-icon {
 
 /* CTA */
 
+.cta-card {
+  background-color: var(--bg-misty-rose);
+  padding: 60px 20px;
+}
+
 /* FOOTER */
 
 /* MEDIA QUERIES */
