@@ -172,6 +172,10 @@ ion-icon {
   .item-title {
     @apply text-6xl;
   }
+
+  .gallery-list {
+    @apply grid gap-4;
+  }
 }
 
 .section-subtitle {
@@ -448,9 +452,19 @@ ion-icon {
   filter: drop-shadow(--shadow-4);
 }
 
-/* EXPERIENCE */
-
 /* GALLERY */
+
+.item-banner {
+  border-radius: var(--radius-20);
+}
+.section-title {
+  margin-block-end: 40px;
+}
+
+.gallery-list {
+  display: grid;
+  gap: 15px;
+}
 
 /* CTA */
 
