@@ -555,4 +555,8 @@ ion-icon {
   color: var(--text-white);
 }
 
+.input-btn ion-icon {
+  transform: translateX(-2px) rotate(45deg);
+}
+
 /* MEDIA QUERIES */
