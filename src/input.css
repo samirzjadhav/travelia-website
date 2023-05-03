@@ -176,6 +176,10 @@ ion-icon {
   .gallery-list {
     @apply grid gap-4;
   }
+
+  .footer-tist-list {
+    @apply text-2xl;
+  }
 }
 
 .section-subtitle {
@@ -485,5 +489,70 @@ ion-icon {
 }
 
 /* FOOTER */
+.footer-top {
+  gap: 40px;
+  padding-block: 60px;
+}
+
+.footer-brand .footer-text {
+  margin-block: 20px;
+}
+
+.social-link {
+  color: var(--bg-majorelle-blue);
+  transition: var(--transition-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: var(--radius-pill);
+}
+
+.input-wrapper ion-icon,
+.social-link ion-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.social-link:is(:hover, :focus-visible) {
+  background-color: var(--bg-majorelle-blue);
+  color: var(--text-white);
+}
+
+.footer-list-title {
+  color: var(--text-gunmetal);
+  margin-block-end: 15px;
+}
+
+.footer-link {
+  margin-block-start: 10px;
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
+
+.footer-list .footer-text {
+  margin-block-end: 15px;
+}
+
+.input-feild {
+  padding-inline: 25px 60px;
+  border: 1px solid var(--border-gainsboro);
+  color: var(--text-gunmetal);
+  border-radius: var(--radius-pill);
+}
+
+.input-feild:focus {
+  border-color: var(--bg-majorelle-blue);
+}
+
+.input-btn {
+  background-color: var(--bg-majorelle-blue) !important;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  right: 5px;
+  color: var(--text-white);
+}
 
 /* MEDIA QUERIES */

@@ -675,40 +675,42 @@
         <!-- Footer -->
         <footer class="footer">
           <div class="h-container container">
-            <div class="footer-top">
+            <div class="footer-top grid">
               <div class="footer-brand">
-                <a href="#"
-                  ><img
+                <a href="#">
+                  <img
                     src="./images/logo.svg"
                     alt="logo"
                     width="187"
                     height="38"
-                /></a>
+                    class="w-44"
+                  />
+                </a>
                 <p class="footer-text">
                   We always make our customer happy by providing as many choices
                   as possible
                 </p>
-                <ul class="social-list">
-                  <li>
+                <ul class="social-list flex items-center gap-2">
+                  <li class="flex justify-center items-center">
                     <a href="#" class="social-link">
-                      <ion-icon name="logo-instagram"> </ion-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
+                      <ion-icon name="logo-instagram"> </ion-icon>
                     </a>
                   </li>
-                  <li>
+                  <li class="flex justify-center items-center">
                     <a href="#" class="social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
+                      <ion-icon name="logo-facebook"> </ion-icon>
+                    </a>
+                  </li>
+                  <li class="flex justify-center items-center">
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-twitter"> </ion-icon>
                     </a>
                   </li>
                 </ul>
               </div>
               <ul class="fotter-list">
                 <li>
-                  <p class="footer-tist-list">About</p>
+                  <p class="footer-list-title text-2xl font-semibold">About</p>
                 </li>
                 <li>
                   <a href="#" class="footer-link">About Us</a>
@@ -725,7 +727,9 @@
               </ul>
               <ul class="fotter-list">
                 <li>
-                  <p class="footer-tist-list">Company</p>
+                  <p class="footer-list-title text-2xl font-semibold">
+                    Company
+                  </p>
                 </li>
                 <li>
                   <a href="#" class="footer-link">Why Company</a>
@@ -742,7 +746,9 @@
               </ul>
               <ul class="fotter-list">
                 <li>
-                  <p class="footer-tist-list">Support</p>
+                  <p class="footer-list-title text-2xl font-semibold">
+                    Support
+                  </p>
                 </li>
                 <li>
                   <a href="#" class="footer-link">Account</a>
@@ -761,28 +767,31 @@
                 </li>
               </ul>
               <div class="footer-list">
-                <p class="footer-list-title">Get in Touch</p>
+                <p class="footer-list-title text-2xl font-semibold">
+                  Get in Touch
+                </p>
                 <p class="footer-text">
                   Question or feedback? We’d love to hear from you.
                 </p>
-                <form action="" class="input-wrapper">
+                <form
+                  action=""
+                  class="input-wrapper flex items-center justify-center relative"
+                >
                   <input
                     type="text"
                     name="email_address"
                     placeholder="Email Address"
-                    class="input-feild"
+                    class="input-feild h-14"
                     autocomplete="off"
                     required
                   />
                   <button
-                    class="input-btn"
+                    class="input-btn w-12 h-12 text-2xl grid absolute"
                     type="submit"
                     aria-label="send a message"
                   >
-                    <ion-icon
-                      name="paper-plane-outline"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <ion-icon name="paper-plane-outline" aria-hidden="true">
+                    </ion-icon>
                   </button>
                 </form>
               </div>
