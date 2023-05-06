@@ -180,6 +180,14 @@ ion-icon {
   .footer-tist-list {
     @apply text-2xl;
   }
+
+  .text {
+    @apply text-2xl md:text-3xl;
+  }
+
+  .subtitle {
+    @apply text-xl md:text-2xl;
+  }
 }
 
 .service {
