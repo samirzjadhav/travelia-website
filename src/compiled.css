@@ -604,6 +604,23 @@ video {
   line-height: 1;
 }
 
+.gallery-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -660,6 +677,14 @@ video {
   margin-left: 1.25rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -708,6 +733,10 @@ video {
   width: 4rem;
 }
 
+.w-3\/12 {
+  width: 25%;
+}
+
 .w-44 {
   width: 11rem;
 }
@@ -722,10 +751,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-3\/12 {
-  width: 25%;
 }
 
 .max-w-\[350px\] {
@@ -759,6 +784,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -908,6 +937,10 @@ video {
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1053,6 +1086,10 @@ ion-icon {
 }
 
 /* PRELOADER */
+
+.service {
+  padding-top: 30px;
+}
 
 .section-subtitle {
   color: var(--text-majorelle-blue);
@@ -1338,12 +1375,174 @@ ion-icon {
   font-weight: var(--weight-bold);
 }
 
-/* EXPERIENCE */
+.exp-shape {
+  left: -10px;
+  filter: drop-shadow(--shadow-4);
+}
 
 /* GALLERY */
 
+.item-banner {
+  border-radius: var(--radius-20);
+}
+
+.section-title {
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+}
+
+.gallery-list {
+  display: grid;
+  gap: 15px;
+}
+
 /* CTA */
+
+.cta-card {
+  background-color: var(--bg-misty-rose);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: var(--radius-30);
+}
+
+.cta .section-title {
+  margin-block: 0 20px;
+}
+
+.cta .btn {
+  margin-inline: auto;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
+}
 
 /* FOOTER */
 
+.footer-top {
+  gap: 40px;
+  padding-block: 60px;
+}
+
+.footer-brand .footer-text {
+  margin-block: 20px;
+}
+
+.social-link {
+  color: var(--bg-majorelle-blue);
+  transition: var(--transition-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: var(--radius-pill);
+}
+
+.input-wrapper ion-icon,
+.social-link ion-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.social-link:is(:hover, :focus-visible) {
+  background-color: var(--bg-majorelle-blue);
+  color: var(--text-white);
+}
+
+.footer-list-title {
+  color: var(--text-gunmetal);
+  -webkit-margin-after: 15px;
+          margin-block-end: 15px;
+}
+
+.footer-link {
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
+
+.footer-list .footer-text {
+  -webkit-margin-after: 15px;
+          margin-block-end: 15px;
+}
+
+.input-feild {
+  padding-inline: 25px 60px;
+  border: 1px solid var(--border-gainsboro);
+  color: var(--text-gunmetal);
+  border-radius: var(--radius-pill);
+}
+
+.input-feild:focus {
+  border-color: var(--bg-majorelle-blue);
+}
+
+.input-btn {
+  background-color: var(--bg-majorelle-blue) !important;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  right: 5px;
+  color: var(--text-white);
+}
+
+.input-btn ion-icon {
+  transform: translateX(-2px) rotate(45deg);
+}
+
 /* MEDIA QUERIES */
+
+@media (min-width: 575px) {
+  .h-container {
+    max-width: 540px !important;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /* navbar */
+
+  .navbar {
+    max-width: 350px;
+    padding-inline: 40px;
+    -webkit-padding-before: 40px;
+            padding-block-start: 40px;
+  }
+
+  /* hero */
+
+  .hero-text {
+    max-width: 42ch;
+  }
+
+  .hero .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero .btn,
+  .hero .btn-secondary {
+    -webkit-margin-after: 0 !important;
+            margin-block-end: 0 !important;
+  }
+
+  /* Service */
+
+  .service .h-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  /* destination */
+
+  .desti-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
