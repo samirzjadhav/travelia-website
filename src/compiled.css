@@ -1810,4 +1810,97 @@ ion-icon {
     width: 100%;
     height: 100%;
   }
+
+  .cta .section-title {
+    max-width: 25ch;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h-container {
+    max-width: 1150px;
+  }
+
+  /* Header */
+
+  .header .logo img {
+    width: 180px;
+  }
+
+  .navbar-list {
+    gap: 50px;
+  }
+
+  .header-action {
+    gap: 40px;
+  }
+
+  .header-action .subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .hero-title {
+    margin-block: 30px;
+  }
+
+  .hero-text {
+    -webkit-margin-after: 50px;
+            margin-block-end: 50px;
+  }
+
+  /* Service */
+
+  .service .h-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service .title-wrapper {
+    grid-column: span 3;
+  }
+
+  .service h2 {
+    -webkit-margin-after: 10px;
+            margin-block-end: 10px;
+  }
+
+  /* Desti */
+
+  .desti-card .card-content {
+    padding-top: 20px;
+  }
+
+  .desti-card .card-rating,
+  .desti-card .card-text {
+    -webkit-margin-before: 15px;
+            margin-block-start: 15px;
+  }
+
+  /* Experience */
+
+  .exp .section-text {
+    margin-block: 30px 40px;
+  }
+
+  .exp-list {
+    gap: 50px;
+  }
+
+  /* CTA */
+
+  .cta-card {
+    padding-bottom: 120px;
+  }
+
+  /* Footer */
+
+  .footer-top {
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
+    gap: 60px;
+  }
+
+  .footer-list li {
+    margin-top: 10px;
+  }
 }
