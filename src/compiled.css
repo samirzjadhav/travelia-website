@@ -1904,3 +1904,49 @@ ion-icon {
     margin-top: 10px;
   }
 }
+
+@media (min-width: 1400px) {
+  .h-container {
+    max-width: 1350px;
+  }
+
+  .navbar-list {
+    gap: 70px;
+  }
+
+  /* Service */
+
+  .service .section-title {
+    -webkit-margin-after: 20px;
+            margin-block-end: 20px;
+  }
+
+  .service .title-wrapper {
+    grid-column: auto;
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
+  }
+
+  .service .h-container {
+    grid-template-columns: 1fr repeat(3, 0.9fr);
+    gap: 50px;
+  }
+
+  .service-card:nth-child(3) {
+    -webkit-margin-before: 80px;
+            margin-block-start: 80px;
+  }
+
+  /* Desti */
+
+  .desti-list {
+    gap: 50px;
+  }
+
+  /* Footer */
+
+  .footer-top {
+    -webkit-padding-after: 80px;
+            padding-block-end: 80px;
+  }
+}
