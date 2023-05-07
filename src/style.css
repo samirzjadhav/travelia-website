@@ -764,5 +764,79 @@ ion-icon {
   .navbar-list {
     margin-block-start: 0;
     display: flex;
+    gap: 30px;
+    margin-inline: auto;
+  }
+
+  .navbar-link:is(:hover, :focus-visible, .active) {
+    transform: unset;
+  }
+
+  .navbar-item {
+    padding-bottom: 0px;
+  }
+
+  .navbar-link::before {
+    width: 10px;
+    height: 3px;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-action {
+    border: none;
+    padding-block-start: 0;
+    gap: 30px;
+  }
+
+  .header.active {
+    padding-block: 15px;
+  }
+
+  .hero .h-container {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 0px;
+    align-items: center;
+  }
+
+  .hero .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .hero-banner {
+    max-width: unset;
+  }
+
+  /* Service */
+  .service .title-wrapper {
+    padding-inline-end: 100px;
+  }
+
+  /* Desti */
+  .desti-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .exp .h-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .exp-content {
+    order: 1;
+  }
+
+  .exp-list {
+    flex-wrap: wrap;
+  }
+
+  .exp-item {
+    margin-block-start: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
   }
 }
