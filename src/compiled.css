@@ -1825,15 +1825,15 @@ ion-icon {
   /* Header */
 
   .header .logo img {
-    width: 180px;
+    width: 11rem;
   }
 
   .navbar-list {
-    gap: 50px;
+    gap: 3rem;
   }
 
   .header-action {
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .header-action .subtitle {

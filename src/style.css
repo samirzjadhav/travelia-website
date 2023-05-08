@@ -882,15 +882,15 @@ ion-icon {
 
   /* Header */
   .header .logo img {
-    width: 180px;
+    @apply w-44;
   }
 
   .navbar-list {
-    gap: 50px;
+    @apply gap-12;
   }
 
   .header-action {
-    gap: 40px;
+    @apply gap-10;
   }
 
   .header-action .subtitle {
