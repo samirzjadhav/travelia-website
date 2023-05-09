@@ -575,18 +575,23 @@ ion-icon {
   transform: translateX(-2px) rotate(45deg);
 }
 
+.h-container {
+  @apply sm: max-[540px]: w-full md:max-[720px]: lg:max-[950px]: xl:max-[1150px]: 2xl:max-[1350px]:;
+}
+
+.navbar {
+  @apply sm:max-[350px]:;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 575px) {
   .h-container {
-    max-width: 540px;
-    width: 100%;
     margin-inline: auto;
   }
 
   /* navbar */
   .navbar {
-    max-width: 350px;
     padding-inline: 40px;
     padding-block-start: 40px;
   }
@@ -621,10 +626,6 @@ ion-icon {
 }
 
 @media (min-width: 768px) {
-  .h-container {
-    max-width: 720px;
-  }
-
   .btn {
     height: 60px;
     padding-inline: 40px;
@@ -742,10 +743,6 @@ ion-icon {
 }
 
 @media (min-width: 992px) {
-  .container {
-    max-width: 950px;
-  }
-
   /* HEADER */
   .nav-toggle-btn,
   .navbar-top,
@@ -876,10 +873,6 @@ ion-icon {
 }
 
 @media (min-width: 1200px) {
-  .h-container {
-    max-width: 1150px;
-  }
-
   /* Header */
   .header .logo img {
     @apply w-44;
@@ -955,10 +948,6 @@ ion-icon {
 }
 
 @media (min-width: 1400px) {
-  .h-container {
-    max-width: 1350px;
-  }
-
   .navbar-list {
     gap: 70px;
   }
